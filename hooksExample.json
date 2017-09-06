@@ -1,0 +1,6 @@
+{
+    "newsurl": "NEWS_URL_HERE/slack",
+    "agendaurl": "AGENDA_URL_HERE/slack"
+
+    // Make sure you have set these up in Server Settings, otherwise it will not work
+}
