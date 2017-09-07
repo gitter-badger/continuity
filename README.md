@@ -15,16 +15,16 @@ Wrong branch? Check out our test-build instead. in-dev builds are extremely expe
 - [] Duty command
   - [] Fix duty command and get idle features working
 - [X] Debug mode
- - [X] Debugging checker
- - [X] Toggable mode via package.json (true/false)
+  - [X] Debugging checker
+  - [X] Toggable mode via package.json (true/false)
 - [X] Modular commands 
- - [] ~~Make sure to add try/catch and handle errors as redis loves to mess up~~ (We've disabled Redis dependencies for now)
- - [X] Modularity for news and agenda channels.
- - [] Get the bot to find a channel name called "news" and let that process be embedded by default so we don't need to change webhooks manually or have Continuity post them (which would be easier.
+  - [] ~~Make sure to add try/catch and handle errors as redis loves to mess up~~ (We've disabled Redis dependencies for now)
+  - [X] Modularity for news and agenda channels.
+  - [] Get the bot to find a channel name called "news" and let that process be embedded by default so we don't need to change webhooks manually or have Continuity post them (which would be easier.
 - [ ] Source control
- - [X] in-dev
- - [X] test-build
- - [] production (master)
+  - [X] in-dev
+  - [X] test-build
+  - [] production (master)
 - [] Do a bunch of other things and check the Trello to-do list
 - [] Get started on the web design & front-end and try and get a prototype deployed.
 
@@ -63,13 +63,13 @@ Also thanks to our contributors for helping put this project together & collecti
 
 **Team Assistants:**
 
-Big thanks to Yemper, Mathis, @Lpopo431 & Manny for keeping Cheese.lab a generally clean & fun place to be around.
+Big thanks to Yemper, Mathis, Lpopo431 & Manny for keeping Cheese.lab a generally clean & fun place to be around.
 
 **Partners:**
 
-Also shoutouts to Mackan, one of our partners who works on [Discord Dungeons]().
+Also shoutouts to Mackan, one of our partners who works on [Discord Dungeons](https://discord.discorddungeons.me).
 
-**Donations:**
+**Backers:**
 
 See our donations on our [OpenCollective](https://opencollective.com/Cheeselab). We'll have some shields here soon.
 
@@ -101,6 +101,6 @@ Submit a pull request if you want to fix something!
 
 ## License (because legal jargon is for the 1970s)
 
-Read our community license [here](https://cheeselab.industries/license).
+Read our community license [here](../../license).
 
 Do whatever you want with this code, just cite the source. Thanks <3
