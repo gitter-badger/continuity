@@ -101,6 +101,6 @@ Submit a pull request if you want to fix something!
 
 ## License (because legal jargon is for the 1970s)
 
-Read our community license [here](https://cheeselab.industreies/license).
+Read our community license [here](https://cheeselab.industries/license).
 
 Do whatever you want with this code, just cite the source. Thanks <3
