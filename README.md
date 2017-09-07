@@ -15,11 +15,16 @@ Wrong branch? Check out our test-build instead. in-dev builds are extremely expe
 - [] Duty command
   - [] Fix duty command and get idle features working
 - [X] Debug mode
+ - [X] Debugging checker
+ - [X] Toggable mode via package.json (true/false)
 - [X] Modular commands 
-- [] Make sure to add try/catch and handle errors as redis loves to mess up
-- [] Modularity for news and agenda channels.
-  - [] Get the bot to find a channel name called "news" and let that process be embedded by default so we don't need to change webhooks manually or have Continuity post them (which would be easier.
-- [] Source control
+ - [] ~~Make sure to add try/catch and handle errors as redis loves to mess up~~ (We've disabled Redis dependencies for now)
+ - [X] Modularity for news and agenda channels.
+ - [] Get the bot to find a channel name called "news" and let that process be embedded by default so we don't need to change webhooks manually or have Continuity post them (which would be easier.
+- [ ] Source control
+ - [X] in-dev
+ - [X] test-build
+ - [] production (master)
 - [] Do a bunch of other things and check the Trello to-do list
 - [] Get started on the web design & front-end and try and get a prototype deployed.
 
@@ -32,18 +37,41 @@ Windows :Visual Studio Code (there's a launch.json file located in ./.vscode/)
 ```
 
 ```
-Linux: Atom (Follow the Linux guide below)
+Linux: Atom or command line. (Follow the Linux guide below)
 ```
 
 ## Contribute to our code (git)
 
 ```cmd
-placeholder for now
+git clone Cheeselab/continuity@in-dev
 ```
+
+Dependencies can be found in `package.json`
 
 Huge thanks to the collective for contributing to this project, its goals and sharing code to make this project a reality.
 
-Dependencies can be found in `package.json`
+Also thanks to our contributors for helping put this project together & collectively learning how to make this!
+
+**Team Core Contributors:**
+
+- @Aurieh (Helping fixing stuff and generally being a whiz at code)
+- @CheeseCast (Front-end concepts, design, smells a bit cheesy...)
+- @Chris92 (Lets us know about some awesome stack we would have never known about!)
+- @Paladinleeds (Came up with the idea)
+- @Snazzah (Command handling and modular things)
+- @Villaz (Public relations guy)
+
+**Team Assistants:**
+
+Big thanks to Yemper, Mathis, @Lpopo431 & Manny for keeping Cheese.lab a generally clean & fun place to be around.
+
+**Partners:**
+
+Also shoutouts to Mackan, one of our partners who works on [Discord Dungeons]().
+
+**Donations:**
+
+See our donations on our [OpenCollective](https://opencollective.com/Cheeselab). We'll have some shields here soon.
 
 ## EXPERIMENTAL ~ Running an instance of Continuity
 
