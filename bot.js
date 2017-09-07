@@ -13,11 +13,13 @@ var debugCheck = _DEBUG;
 
 // OPTIONS
 
+var ownerID = "OWNER_ID_HERE";
+
 var options = {
     botVersion: _VERSION,
     gameName: debugCheck,
     prefix: ".",
-    owner: "71323348545576960"
+    owner: ownerID
 }
 
 // DEBUG CHECK
