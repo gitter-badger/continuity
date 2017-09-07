@@ -1,6 +1,6 @@
 ## Continuity | IN-DEV (DEBUGGING BUILD)
 
-`Build: No problems detected`
+[![Build Status](https://travis-ci.org/Cheeselab/continuity.png?branch=in-dev)](https://travis-ci.org/Cheeselab/continuity)
 
 `Submit an issue if you find a bug`
 
@@ -37,8 +37,8 @@ Linux: Atom (Follow the Linux guide below)
 
 ## Contribute to our code (git)
 
-```git
-git clone /Cheeselab/continuity/tree/in-dev
+```cmd
+placeholder for now
 ```
 
 Huge thanks to the collective for contributing to this project, its goals and sharing code to make this project a reality.
