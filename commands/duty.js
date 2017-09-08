@@ -1,5 +1,5 @@
 var async = require('async');
-var superagent = require('superagent');
+var request = require('snekfetch');
 var webhooks = require('../hooks.json'); 
 var _dutyHook = webhooks.agendaurl;
 
@@ -23,7 +23,7 @@ command = {
       "color": 0x1f9e4a,
       "fields": [{name: "🆗 `Duty status has been changed to available.`", value: "`Remember to clock off, "+n+"!`"}]
       });
-      superagent.post(_dutyHook)
+      request.post(_dutyHook)
       .send({
       "username": "Duty Monitor",
       "icon_url": memberAvatar,
@@ -57,7 +57,7 @@ command = {
       "color": 0xf33838,
       "fields": [{name: "🆗 `Duty status has been changed to unavailable.`", value: "`Remember to clock on when you return, "+n+"!`"}]
       });
-      superagent.post(_dutyHook)
+      request.post(_dutyHook)
       .send({
       "username": "Duty Monitor",
       "icon_url": memberAvatar,

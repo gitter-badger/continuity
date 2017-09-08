@@ -1,4 +1,4 @@
-var superagent = require('superagent');
+var request = require('snekfetch');
 
 command = {
   name: "id",
@@ -9,7 +9,7 @@ command = {
       var memberAvatar = "https://cdn.discordapp.com/avatars/"+msg.member.user.id+"/"+msg.member.user.avatar+".jpg";
       var msgMemberDate = new Date(msg.member.user.createdAt);
       var memberContent = "**Created:** "+msgMemberDate;
-      superagent.post('https://canary.discordapp.com/api/webhooks/233828282058014730/2Dcy1QS7ei9otTbhA6YiQBh9lw0m62TIWuKKefyStpXFzLwmF_4PLxXQuH1Hi6TMeEPG/slack')
+      request.post('https://canary.discordapp.com/api/webhooks/233828282058014730/2Dcy1QS7ei9otTbhA6YiQBh9lw0m62TIWuKKefyStpXFzLwmF_4PLxXQuH1Hi6TMeEPG/slack')
       .send(
         {
           "username": memberName,

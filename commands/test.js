@@ -1,4 +1,4 @@
-var superagent = require('superagent');
+var request = require('snekfetch');
 
 command = {
   name: "test",

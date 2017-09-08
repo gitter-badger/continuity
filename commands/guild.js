@@ -1,4 +1,4 @@
-var superagent = require('superagent');
+var request = require('snekfetch');
 
 command = {
   name: "guild",
@@ -7,7 +7,7 @@ command = {
     var guildMembers = "There are currently **"+msg.channel.guild.memberCount+" members** on this guild.";
     var msgDate = new Date(msg.channel.guild.createdAt);
     var guildAvatar = "https://discordapp.com/api/guilds/"+msg.channel.guild.id+"/icons/"+msg.channel.guild.icon+".jpg";
-    superagent.post('https://canary.discordapp.com/api/webhooks/233828282058014730/2Dcy1QS7ei9otTbhA6YiQBh9lw0m62TIWuKKefyStpXFzLwmF_4PLxXQuH1Hi6TMeEPG/slack')
+    request.post('https://canary.discordapp.com/api/webhooks/233828282058014730/2Dcy1QS7ei9otTbhA6YiQBh9lw0m62TIWuKKefyStpXFzLwmF_4PLxXQuH1Hi6TMeEPG/slack')
     .send(
       {
     "username": msg.member.guild.name,

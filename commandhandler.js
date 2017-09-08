@@ -2,7 +2,6 @@ var path = require("path").join(__dirname, "commands");
 var loadedCommands = {}
 var Cleverbot = require('cleverbot-node');
 const needle = require("needle");
-var superagent = require('superagent');
 var async = require("async");
 
 require("fs").readdirSync(path).forEach(function (file) {

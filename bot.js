@@ -1,5 +1,4 @@
 const Eris = require("eris");
-const srequest = require("superagent");
 const image = require('imagemagick');
 var fs = require('fs');
 

@@ -1,7 +1,7 @@
 var async = require('async');
-var superagent = require('superagent');
+var request = require('snekfetch');
 var webhooks = require('../hooks.json'); 
-var _newsHook = webhooks.newsurl;
+var _newsHook = webhooks.newsURL;
 
 command = {
   name: "news",
@@ -12,7 +12,7 @@ command = {
     var n = msg.member.nick
     if(msg.member.nick===null){ n = msg.member.user.username }
     if(msg.member.permission.has("kickMembers")){
-      superagent.post(_newsHook)
+      request.post(_newsHook)
       .send({
       "content": "[]",
       "username": "News Bulletin",
