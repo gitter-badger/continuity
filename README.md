@@ -37,13 +37,20 @@ Windows :Visual Studio Code (there's a launch.json file located in ./.vscode/)
 ```
 
 ```
-Linux: Atom or command line. (Follow the Linux guide below)
+Linux: Atom or bash terminal. (Follow the Linux guide below)
 ```
 
 ## Contribute to our code (git)
 
+Make sure git is installed
+
 ```cmd
-git clone Cheeselab/continuity@in-dev
+Windows: Git Bash
+Linux: apt-get install git
+```
+
+```cmd
+git clone -b in-dev https://github.com/Cheeselab/continuity.git
 ```
 
 Dependencies can be found in `package.json`
@@ -85,11 +92,17 @@ experiment in our test-build and in-dev branches.
 
 *If you're stuck on something, just let us know in #campus-grounds or #troubleshooting on [Discord](https://discord.gg/lab).*
 
+**Before you get started:**
+
+```sudo apt-get install -y nodejs```
+
 **Make sure to do `npm init` to grab packages and dependencies.**
 
 `npm install` inside of the Continuity folder - Ignore work in progress things.
 
-`pm2 start bot.js`
+If you get any errors do `npm i -g n` and `n latest` then redo the previous steps.
+
+To start the bot: `pm2 start bot.js`
 
 Don't worry if it errors or tells you about promise catches. That's fine, we're still actively fixing bugs.
 
