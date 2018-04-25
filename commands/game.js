@@ -5,11 +5,11 @@ command = {
     var gameChange = args.join(" ");
     if (msg.author.id === options.owner){  // options.owner is changeable via bot.js
         if (gameChange){
-          bot.editGame({name: gameChange});
+          bot.editStatus({name: gameChange});
           bot.createMessage(msg.channel.id, ":ok: Game has been changed to `"+gameChange+"`.");
         }
         else if (args < 1) {
-          bot.editGame({name: options.gameName});
+          bot.editStatus({name: options.gameName});
           bot.createMessage(msg.channel.id, ":ok: Game has been changed back to default.");
         }
     }else{
