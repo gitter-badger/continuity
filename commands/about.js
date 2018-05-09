@@ -9,7 +9,7 @@ command = {
             embed: {
                 content: "[]()",
                 description:
-                "**<:bottag:352070466384560128> Version: **" + options.botVersion
+                "**Version: **" + options.botVersion
                 + "\n You can get help on the server by typing `"+options.prefix+"help`",
                 author: { // Author property
                     name: "Continuity",
@@ -44,7 +44,7 @@ command = {
                     }
                 ],
                 footer: { // Footer text
-                    text: "Coded with 💛 by the "+msg.channel.guild.name+" community.",
+                    text: "Coded with 💛 by the Cheese.lab Industries community.",
                     icon_url: "https://discordapp.com/api/guilds/"+msg.channel.guild.id+"/icons/"+msg.channel.guild.icon+".jpg"
                 }
             }

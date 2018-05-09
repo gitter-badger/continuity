@@ -11,7 +11,7 @@ command = {
      return msg.channel.id, {
             embed: {
                 title: n, // Title of the embed
-                description: "Here is some more info, with **awesome** formatting.\nPretty *neat*, huh?",
+                description: "Do not test me, " + msg.author.username+"!",
                 author: { // Author property
                     name: msg.author.username,
                     icon_url: msg.author.avatarURL
@@ -28,10 +28,7 @@ command = {
                         value: "Another extra value.",
                         inline: true
                     }
-                ],
-                footer: { // Footer text
-                    text: "Created with Eris."
-                }
+                ]
             }
         }
   }

@@ -1,7 +1,7 @@
 var async = require('async');
 var request = require('snekfetch');
 var webhooks = require('../hooks.json'); 
-var _newsHook = webhooks.newsURL;
+var _newsHook = webhooks.newsurl;
 
 command = {
   name: "news",
