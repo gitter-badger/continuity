@@ -12,12 +12,18 @@ Wrong branch? Check out our test-build instead. in-dev builds are extremely expe
 
 ## To-do:
 
-- [] Duty command
-  - [] Fix duty command and get idle features working
+- [X] Duty command
+  - [X] Fix duty command and get idle features working
+- [] Automatic enrollment process
+  - [X] Continuity will automatically give you the "Enrolled" role by accepting the Code of Conduct.
+  - [] Next step is making an .enroll command which walks you through the process of being enrolled.
+- [X] Activity zones optin/optout
+  - [X] Optin to Gaming and DIY activity zones
+  - [X] Optout to Gaming and DIY activity zones
 - [X] Debug mode
   - [X] Debugging checker
   - [X] Toggable mode via package.json (true/false)
-- [X] Modular commands 
+- [ ] Modular commands 
   - [] ~~Make sure to add try/catch and handle errors as redis loves to mess up~~ (We've disabled Redis dependencies for now)
   - [X] Modularity for news and agenda channels.
   - [] Get the bot to find a channel name called "news" and let that process be embedded by default so we don't need to change webhooks manually or have Continuity post them (which would be easier.
