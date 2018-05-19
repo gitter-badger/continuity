@@ -12,18 +12,12 @@ Wrong branch? Check out our test-build instead. in-dev builds are extremely expe
 
 ## To-do:
 
-- [X] Duty command
-  - [X] Fix duty command and get idle features working
-- [] Automatic enrollment process
-  - [X] Continuity will automatically give you the "Enrolled" role by accepting the Code of Conduct.
-  - [] Next step is making an .enroll command which walks you through the process of being enrolled.
-- [X] Activity zones optin/optout
-  - [X] Optin to Gaming and DIY activity zones
-  - [X] Optout to Gaming and DIY activity zones
+- [] Duty command
+  - [] Fix duty command and get idle features working
 - [X] Debug mode
   - [X] Debugging checker
   - [X] Toggable mode via package.json (true/false)
-- [ ] Modular commands 
+- [X] Modular commands 
   - [] ~~Make sure to add try/catch and handle errors as redis loves to mess up~~ (We've disabled Redis dependencies for now)
   - [X] Modularity for news and agenda channels.
   - [] Get the bot to find a channel name called "news" and let that process be embedded by default so we don't need to change webhooks manually or have Continuity post them (which would be easier.
@@ -43,20 +37,13 @@ Windows :Visual Studio Code (there's a launch.json file located in ./.vscode/)
 ```
 
 ```
-Linux: Atom or bash terminal. (Follow the Linux guide below)
+Linux: Atom or command line. (Follow the Linux guide below)
 ```
 
 ## Contribute to our code (git)
 
-Make sure git is installed
-
 ```cmd
-Windows: Git Bash
-Linux: apt-get install git
-```
-
-```cmd
-git clone -b in-dev https://github.com/Cheeselab/continuity.git
+git clone Cheeselab/continuity@in-dev
 ```
 
 Dependencies can be found in `package.json`
@@ -98,17 +85,11 @@ experiment in our test-build and in-dev branches.
 
 *If you're stuck on something, just let us know in #campus-grounds or #troubleshooting on [Discord](https://discord.gg/lab).*
 
-**Before you get started:**
-
-```sudo apt-get install -y nodejs```
-
 **Make sure to do `npm init` to grab packages and dependencies.**
 
 `npm install` inside of the Continuity folder - Ignore work in progress things.
 
-If you get any errors do `npm i -g n` and `n latest` then redo the previous steps.
-
-To start the bot: `pm2 start bot.js`
+`pm2 start bot.js`
 
 Don't worry if it errors or tells you about promise catches. That's fine, we're still actively fixing bugs.
 

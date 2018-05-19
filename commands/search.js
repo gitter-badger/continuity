@@ -1,22 +1,50 @@
 var needle = require('needle');
+var admin = require('firebase-admin');
+
+var serviceAccount = require('./../cheeselab-creds.json');
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: 'https://cheeselab-7a34e.firebaseio.com'
+});
 
 command = {
   name: "search",
   description: "Look for resources in the Cheese.lab API",
   protocol: function(bot, msg, args, options){
-    needle.get(`api.cheeselab.space/resources/search/${args.join(" ")}`, (err, response, body) => {
+
+    /*let db = admin.database().ref("/resources");
+
+    let searchWord = args.join(" ").toLowerCase();*/
+    
+    function sortMe(oldObj, keyword) {
+      let newObj = oldObj.filter(obj => {
+        if(obj.name.toLowerCase().includes(keyword.toLowerCase())) {
+          return true;
+        }
+        return false;
+      });
+      return newObj;
+    }
+
+    needle.get(`https://cheeselab-7a34e.firebaseio.com/resources.json`, (err, response, body) => {
     if (!err && response.statusCode == 200) {
-    if (!body.length) {
+    console.log(response.body) 
+
+    let searchWord = args.join(" ").toLowerCase();
+    let sorted = sortMe(response.body, searchWord);
+
+    if (!sorted.length) {
     return bot.createMessage(msg.channel.id, "⛔ `\""+args+"\" doesn't exist and returned no results...`");
     };
-    if (body.length > 15) {
+    if (sorted.length > 15) {
     return bot.createMessage(msg.channel.id, "⛔ `Too many results to display. Please be more specific.`");
     };
-    var results = `**__Showing ${body.length} result(s) :mag_right:__**\n\n`;
-    for (var result of body) {
+    var results = `**__Showing ${sorted.length} result(s) :mag_right:__**\n\n`;
+    for (var result of sorted) {
       var resdes = "";
-       if(result.description!=undefined){ resdes = result.description+"\n" }
-      results += "**"+result.name+"** `"+result.type+"` | <"+result.url+"> \n"
+       if(result.description!=undefined || result.description!=null){ resdes = result.description+"\n" }
+      results += "**"+result.name+"** `"+result.type+"` | <"+result.link+"> \n"
       +resdes;
     }
     bot.createMessage(msg.channel.id, results);

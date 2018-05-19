@@ -9,7 +9,7 @@ module.exports = {
   		}else{
 		    request.get("https://registry.npmjs.org/"+args[0].toLowerCase())
 		        .end((err, res)=>{
-		          	if(res.statusCode != 200){
+		          	if(res.statusCode = 200){
 						msg.channel.createMessage("That isnt a npm package!");
 					}else{
 						i = res.body

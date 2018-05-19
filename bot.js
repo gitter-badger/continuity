@@ -12,7 +12,7 @@ var debugCheck = _DEBUG;
 
 // OPTIONS
 
-var ownerID = "OWNER_ID_HERE";
+var ownerID = "71323348545576960";
 
 var options = {
     botVersion: _VERSION,

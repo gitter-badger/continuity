@@ -4,8 +4,8 @@ command = {
   protocol: function(bot, msg, args, options){
      /*guildMembers = "There are currently **"+msg.channel.guild.memberCount+" members** on this guild.";
      msgDate = new Date(msg.channel.guild.createdAt);
-     guildAvatar = "https://discordapp.com/api/guilds/"+msg.channel.guild.id+"/icons/"+msg.channel.guild.icon+".jpg";*/
-    return bot.createMessage(msg.channel.id, {
+     guildAvatar = "https://discordapp.com/api/guilds/"+msg.channel.guild.id+"/icons/"+msg.channel.guild.icon+".jpg";*/  
+     return bot.createMessage(msg.channel.id, {
             embed: {
                 content: "[]()",
                 description:
@@ -34,7 +34,7 @@ command = {
                     },
                     {
                         name: "**Current game:**",
-                        value: "`"+options.gameName+"`"+" Only the owner can set this.",
+                        value: "`"+options.gameName+"`",
                         inline: true
                     }, 
                     {
