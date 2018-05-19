@@ -1,0 +1,45 @@
+{
+    "resources": [{
+            "name": "Codecademy",
+            "type": "courses",
+            "description": "Codecademy teaches you HTML/CSS, Java, jQuery, JavaScript, Ruby, Python and even APIs!",
+            "link": "https://codecademy.com"
+        },
+        {
+            "name": "CodeAnywhere",
+            "type": "editors",
+            "description": null,
+            "link": "https://codeanywhere.com"
+        },
+        {
+            "name": "Visual Studio Code",
+            "type": "editors",
+            "description": null,
+            "link": "https://code.visualstudio.com"
+        },
+        {
+            "name": "StackBlitz",
+            "type": "editors",
+            "description": "The online IDE for web applications. Powered by VS Code.",
+            "link": "https://stackblitz.com/"
+        },
+        {
+            "name": "Learn Code The Hard Way",
+            "type": "courses",
+            "description": null,
+            "link": "https://learncodethehardway.org"
+        },
+        {
+            "name": "CodePen",
+            "type": "playgrounds",
+            "description": "CodePen is a place where you can test your code in an interactive play area.  HTML, CSS, Javascript",
+            "link": "https://codepen.io"
+        },
+        {
+            "name": "CodeCombat",
+            "type": "games",
+            "description": "CodeCombat helps you code by fighting monsters while teaching you about coding!",
+            "link": "http://codecombat.com"
+        }
+    ]
+}
