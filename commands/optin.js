@@ -10,6 +10,10 @@ command = {
       bot.addGuildMemberRole("81812480254291968", msg.author.id, "443590269242441738", "Member has been added to GAMING.");
        bot.createMessage(msg.channel.id, ":ok: `You have now have access to Cheese.lab Gaming.`");
       }
+      else if (args[0] === "notifications"){
+        bot.addGuildMemberRole("81812480254291968", msg.author.id, "449366980177166346", "Member is now receiving notifications.");
+         bot.createMessage(msg.channel.id, ":ok: `You will now receive notifications.`");
+      }
       else {
         bot.createMessage(msg.channel.id, "`.optin [diy|gaming]`");
       }

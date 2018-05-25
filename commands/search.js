@@ -26,14 +26,12 @@ command = {
       });
       return newObj;
     }
-
-    needle.get(`https://cheeselab-7a34e.firebaseio.com/resources.json`, (err, response, body) => {
+   needle.get(`https://cheeselab-7a34e.firebaseio.com/resources.json`, (err, response, body) => {
     if (!err && response.statusCode == 200) {
-    console.log(response.body) 
 
     let searchWord = args.join(" ").toLowerCase();
     let sorted = sortMe(response.body, searchWord);
-
+    
     if (!sorted.length) {
     return bot.createMessage(msg.channel.id, "⛔ `\""+args+"\" doesn't exist and returned no results...`");
     };

@@ -10,6 +10,10 @@ command = {
       bot.removeGuildMemberRole("81812480254291968", msg.author.id, "443590269242441738", "Member has been removed from GAMING.");
        bot.createMessage(msg.channel.id, ":ok: `You have no longer have access to Cheese.lab Gaming.`");
       }
+      else if (args[0] === "notifications"){
+        bot.removeGuildMemberRole("81812480254291968", msg.author.id, "449366980177166346", "Member is no longer receiving notifications.");
+         bot.createMessage(msg.channel.id, ":ok: `You will no longer receive notifications.`");
+      }
       else {
         bot.createMessage(msg.channel.id, "`.optout [diy|gaming]`");
       }

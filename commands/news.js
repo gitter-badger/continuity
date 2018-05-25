@@ -14,10 +14,10 @@ command = {
     if(msg.member.permission.has("kickMembers")){
       request.post(_newsHook)
       .send({
-      "content": "[]",
+      "content": "[](<@&449366980177166346>)",
       "username": "News Bulletin",
       "icon_url": "",
-      "text": "[]()",
+      "text": "[](<@&449366980177166346>)",
       "attachments": [
         {
           "pretext": args.join(" "),
