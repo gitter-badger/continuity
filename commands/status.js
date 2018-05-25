@@ -9,7 +9,7 @@ command = {
   description: "Add, view, delete, & resolve Statusy incidents.",
   protocol: function (bot, msg, args, options, statusy) {
     var regex1 = new RegExp('^\\d+$');
-    if(args.length == 2 && args[0].toLowerCase() === "incident" && regex1.test(args[1]) === true) {
+    if(args.length == 2 && args[0].toLowerCase() === "incidents" && regex1.test(args[1]) === true) {
       console.log("No error");
       fetch.get("https://app.statusy.co/api/v1/" + _APITOKEN + "/statuspage/" + _ID + "/incident/all")
       .then(r => {
