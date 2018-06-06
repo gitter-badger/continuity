@@ -1,3 +1,10 @@
+---
+description: >-
+  Warning: This is a highly experimental package and is recommended for
+  intermediate developers. Only use this if you know what you're doing. (The Web
+  side of Continuity hasn't been coded yet.)
+---
+
 # Getting Started
 
 ## Continuity \| IN-DEV \(DEBUGGING BUILD\)
