@@ -1,4 +1,6 @@
-## Continuity | IN-DEV (DEBUGGING BUILD)
+# Getting Started
+
+## Continuity \| IN-DEV \(DEBUGGING BUILD\)
 
 [![Build Status](https://travis-ci.org/Cheeselab/continuity.png?branch=in-dev)](https://travis-ci.org/Cheeselab/continuity)
 
@@ -12,37 +14,37 @@ Wrong branch? Check out our test-build instead. in-dev builds are extremely expe
 
 ## To-do:
 
-- [] Duty command
-  - [] Fix duty command and get idle features working
-- [X] Debug mode
-  - [X] Debugging checker
-  - [X] Toggable mode via package.json (true/false)
-- [X] Modular commands 
-  - [] ~~Make sure to add try/catch and handle errors as redis loves to mess up~~ (We've disabled Redis dependencies for now)
-  - [X] Modularity for news and agenda channels.
-  - [] Get the bot to find a channel name called "news" and let that process be embedded by default so we don't need to change webhooks manually or have Continuity post them (which would be easier.
-- [ ] Source control
-  - [X] in-dev
-  - [X] test-build
-  - [] production (master)
-- [] Do a bunch of other things and check the Trello to-do list
-- [] Get started on the web design & front-end and try and get a prototype deployed.
+* \[\] Duty command
+  * \[\] Fix duty command and get idle features working
+* \[X\] Debug mode
+  * \[X\] Debugging checker
+  * \[X\] Toggable mode via package.json \(true/false\)
+* \[X\] Modular commands 
+  * \[\] ~~Make sure to add try/catch and handle errors as redis loves to mess up~~ \(We've disabled Redis dependencies for now\)
+  * \[X\] Modularity for news and agenda channels.
+  * \[\] Get the bot to find a channel name called "news" and let that process be embedded by default so we don't need to change webhooks manually or have Continuity post them \(which would be easier.
+* [ ] Source control
+  * \[X\] in-dev
+  * \[X\] test-build
+  * \[\] production \(master\)
+* \[\] Do a bunch of other things and check the Trello to-do list
+* \[\] Get started on the web design & front-end and try and get a prototype deployed.
 
 ## Dependencies & Pre-requisites
 
 **Platforms**
 
-```
+```text
 Windows :Visual Studio Code (there's a launch.json file located in ./.vscode/)
 ```
 
-```
+```text
 Linux: Atom or command line. (Follow the Linux guide below)
 ```
 
-## Contribute to our code (git)
+## Contribute to our code \(git\)
 
-```cmd
+```text
 git clone Cheeselab/continuity@in-dev
 ```
 
@@ -54,12 +56,12 @@ Also thanks to our contributors for helping put this project together & collecti
 
 **Team Core Contributors:**
 
-- @Aurieh (Helping fixing stuff and generally being a whiz at code)
-- @CheeseCast (Front-end concepts, design, smells a bit cheesy...)
-- @Chris92 (Lets us know about some awesome stack we would have never known about!)
-- @Paladinleeds (Came up with the idea)
-- @Snazzah (Command handling and modular things)
-- @Villaz (Public relations guy)
+* @Aurieh \(Helping fixing stuff and generally being a whiz at code\)
+* @CheeseCast \(Front-end concepts, design, smells a bit cheesy...\)
+* @Chris92 \(Lets us know about some awesome stack we would have never known about!\)
+* @Paladinleeds \(Came up with the idea\)
+* @Snazzah \(Command handling and modular things\)
+* @Villaz \(Public relations guy\)
 
 **Team Assistants:**
 
@@ -79,13 +81,11 @@ See our donations on our [OpenCollective](https://opencollective.com/Cheeselab).
 
 We recommend Linux for advanced users.
 
-We recommend Windows Visual Studio Code for 
-people who are new to coding or just want to
-experiment in our test-build and in-dev branches.
+We recommend Windows Visual Studio Code for people who are new to coding or just want to experiment in our test-build and in-dev branches.
 
-*If you're stuck on something, just let us know in #campus-grounds or #troubleshooting on [Discord](https://discord.gg/lab).*
+_If you're stuck on something, just let us know in \#campus-grounds or \#troubleshooting on_ [_Discord_](https://discord.gg/lab)_._
 
-**Make sure to do `npm init` to grab packages and dependencies.**
+**Make sure to do** `npm init` **to grab packages and dependencies.**
 
 `npm install` inside of the Continuity folder - Ignore work in progress things.
 
@@ -97,10 +97,11 @@ Submit a pull request if you want to fix something!
 
 ## COMING SOON - Add Continuity to your own server
 
- Wait for production build soon. ~ We're looking into scalable VPS solutions. 
+Wait for production build soon. ~ We're looking into scalable VPS solutions.
 
-## License (because legal jargon is for the 1970s)
+## License \(because legal jargon is for the 1970s\)
 
 Read our community license [here](https://cheeselab.industries/license).
 
-Do whatever you want with this code, just cite the source. Thanks <3
+Do whatever you want with this code, just cite the source. Thanks &lt;3
+
