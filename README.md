@@ -1,11 +1,16 @@
 ---
 description: >-
-  Warning: This is a highly experimental package and is recommended for
-  intermediate developers. Only use this if you know what you're doing. (The Web
-  side of Continuity hasn't been coded yet.)
+  Full Documentation for Continuity's web and bot stack. More documentation will
+  be added over time.
 ---
 
 # Getting Started
+
+
+
+{% hint style="danger" %}
+Warning: This is a highly experimental package and is recommended for intermediate learners & developers. Only use this if you know what you're doing. \(The Web side of Continuity hasn't been coded yet.\)
+{% endhint %}
 
 ## Continuity \| IN-DEV \(DEBUGGING BUILD\)
 
@@ -78,7 +83,7 @@ Also thanks to our contributors for helping put this project together & collecti
 
 * @Aurieh \(Helping fixing stuff and generally being a whiz at code\)
 * @CheeseCast \(Front-end concepts, design, smells a bit cheesy...\)
-* @Chris92 \(Lets us know about some awesome stack we would have never known about!\)
+* @Chris92 \(Lets us know about some awesome stack we would have never known about!\) @Manny \(Helps with some of the commands and other things\)
 * @Paladinleeds \(Came up with the idea\)
 * @Snazzah \(Command handling and modular things\)
 * @Villaz \(Public relations guy\)
